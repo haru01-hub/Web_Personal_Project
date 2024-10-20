@@ -23,7 +23,7 @@ export default function Header() {
           </div>
           <div className="flex items-center font-bold">
             <Link
-              href="/repository"
+              href="/portpolio-intro"
               className="text-gray-300 hover:text-white mr-4"
             >
               Portpolio Intro.

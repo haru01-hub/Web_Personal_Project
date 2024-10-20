@@ -18,7 +18,7 @@ export default function Repositorypage() {
         <p className="mt-2 font-bold mb-2">대학교 2학년 2학기</p>
         <p>
           리눅스 명령어 및 리눅스 서버와 클라우드 시스템에 대해서 공부할
-          예정입니다. 또한 한국 인터넷 진흥원 사이트에 <br /> 올라온 취약점 상세
+          예정입니다. 또한 한국 인터넷 진흥원 사이트에 올라온 취약점 상세
           가이드를 읽어보며 분석할 예정입니다.
         </p>
       </div>
@@ -28,7 +28,7 @@ export default function Repositorypage() {
         <p className="mt-2 font-bold mb-2">대학교 3학년 1학기</p>
         <p>
           대학교에서 진행하는 CCIT에 참여하여, 시스템 보안, 네트워크 등에 관련된
-          지식을 쌓아나갈 예정입니다. 또한, 리눅스 마스터 등<br /> 자격증 공부를
+          지식을 쌓아나갈 예정입니다. 또한, 리눅스 마스터 등 자격증 공부를
           시작할 것입니다.
         </p>
       </div>
