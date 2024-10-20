@@ -27,7 +27,7 @@ export default function Home() {
           참고해주세요! 」
         </p>
         <Link
-          href="/repository"
+          href="/portpolio-intro"
           className="ml-4 font-bold text-black hover:text-blue-400 hover:text-xl"
         >
           ▶ 더보기
