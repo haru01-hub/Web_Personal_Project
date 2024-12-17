@@ -58,6 +58,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import TopicView from 'src/app/components/TopicView'
+const apiUrl = process.env.API_URL
 
 interface Topic {
   _id: string
@@ -86,7 +87,9 @@ export default function TopicsList({ category }: TopicListProps) {
   useEffect(() => {
     async function fetchTopics() {
       try {
-        const res = await fetch(`/api/${category}?category=${category}`)
+        const res = await fetch(
+          `${apiUrl}/api/${category}?category=${category}`
+        )
         if (!res.ok) {
           throw new Error('Failed to fetch topics')
         }
@@ -122,7 +125,7 @@ export default function TopicsList({ category }: TopicListProps) {
   const handleDelete = async (id: string) => {
     if (window.confirm('Are you sure you want to delete this topic?')) {
       try {
-        const res = await fetch(`/api/${category}/${id}`, {
+        const res = await fetch(`${apiUrl}/api/${category}/${id}`, {
           method: 'DELETE',
         })
         if (res.ok) {
