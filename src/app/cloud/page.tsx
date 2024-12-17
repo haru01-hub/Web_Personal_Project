@@ -529,9 +529,8 @@
 
 // export default TopicsList
 'use client'
-
 import React from 'react'
-import TopicsList from '../components/TopicsList'
+import TopicsList from 'src/app/components/TopicsList'
 
 export default function CloudPage() {
   return (

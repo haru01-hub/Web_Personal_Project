@@ -57,7 +57,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import TopicView from '../components/TopicView'
+import TopicView from 'src/app/components/TopicView'
 
 interface Topic {
   _id: string
@@ -86,7 +86,7 @@ export default function TopicsList({ category }: TopicListProps) {
   useEffect(() => {
     async function fetchTopics() {
       try {
-        const res = await fetch(`/api/category=${category}`)
+        const res = await fetch(`/api/${category}?category=${category}`)
         if (!res.ok) {
           throw new Error('Failed to fetch topics')
         }
