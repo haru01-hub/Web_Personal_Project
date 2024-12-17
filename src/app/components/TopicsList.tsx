@@ -86,7 +86,7 @@ export default function TopicsList({ category }: TopicListProps) {
   useEffect(() => {
     async function fetchTopics() {
       try {
-        const res = await fetch(`/api/${category}?category=${category}`)
+        const res = await fetch(`/api/category=${category}`)
         if (!res.ok) {
           throw new Error('Failed to fetch topics')
         }
